@@ -8,6 +8,9 @@ namespace eDnevnik
 {
     static class Program
     {
+        static public int userUloga = 0;
+        static public string userIme = "";
+        static public string userPrezime = "";
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +19,7 @@ namespace eDnevnik
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Login());
         }
     }
 }
