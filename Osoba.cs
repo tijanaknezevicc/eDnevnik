@@ -113,6 +113,7 @@ namespace eDnevnik
         {
             // insert into osoba (ime, prezime, adresa, jmbg, email, pass, uloga)
             // values('Marko','Lazic','Savska 10','123456791234', 'markol@gmail.com', '1234', '1')
+
             StringBuilder naredba = new StringBuilder("insert into osoba (ime, prezime, adresa, jmbg, email, pass, uloga) values('");
             naredba.Append(textBoxIme.Text + "', '");
             naredba.Append(textBoxPrezime.Text + "', '");
@@ -181,13 +182,14 @@ namespace eDnevnik
             SqlConnection veza = konekcija.connect();
             SqlCommand komanda = new SqlCommand(naredba, veza);
 
-            Boolean brisano = false;
+            bool brisano = false;
 
             try
             {
                 veza.Open();
                 komanda.ExecuteNonQuery();
                 veza.Close();
+                brisano = true;
             }
             catch (Exception greska)
             {
