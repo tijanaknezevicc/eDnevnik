@@ -46,8 +46,10 @@ namespace eDnevnik
                             Program.userIme = tabela.Rows[0]["ime"].ToString();
                             Program.userPrezime = tabela.Rows[0]["prezime"].ToString();
                             this.Hide();
-                            Glavna formGlavna = new Glavna();
-                            formGlavna.Show();
+                            //Glavna formGlavna = new Glavna();
+                            //formGlavna.Show();
+                            Glavna2 formGlavna2 = new Glavna2();
+                            formGlavna2.Show();
                         }
                         else
                         {
