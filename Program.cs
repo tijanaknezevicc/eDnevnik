@@ -20,8 +20,7 @@ namespace eDnevnik
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Login());
-            //Application.Run(new Upisnica());
-            //Application.Run(new Glavna2());
+            //Application.Run(new Ocena());
 
         }
     }
